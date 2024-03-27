@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+--Desaturated-Blue: hsl(238, 22%, 44%);
+--Bright-Blue: hsl(224, 93%, 58%);
+--Moderate-Cyan: hsl(170, 45%, 43%);
+--Light-Grayis-Blue: hsl(240, 75%, 98%);
+--Light-Gray: hsl(0, 0%, 75%);
+}
+*{
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: var(--Light-Grayis-Blue); */
+    
+}
+/* header  */
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 80px;
+}
+.header > ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 60px;
+    align-items: center;
+    color: var(--Desaturated-Blue);
+}
+ul > li:hover{
+    color: var(--Bright-Blue);
+    cursor: pointer;
+}
+/* first-body  */
+.first{
+    margin: 20px 80px;
+    display: flex;
+    gap: 40px;
+    animation: fadeIn 2s ease forwards;
+}
+.first > .left {
+    width: 45%;
+    /* align-items: center; */
+    
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.left > h1 {
+    color: var(--Very-Dark-Blue);
+    line-height: 45px;
+}
+.left > p {
+    color: var(--Desaturated-Blue);
+    padding: 20px 0;
+    color: var(--Very-Dark-Blue);
+    font-weight: 500;
+}
+.left > .form{
+    gap: 10px;
+    display: flex;
+}
+.left > .form > input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid var(--Light-Gray);
+    border-radius: 5px;
+}
+.left > .form > button{
+    background-color: var(--Bright-Blue);
+    width: 30%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: var(--Light-Grayis-Blue);
+}
+.left > .form > button:hover{
+cursor: pointer;
+background-color: var(--Desaturated-Blue);
+}
+.first > .right{
+    width: 55%;
+}
+.first > .right > img{
+    width: 90%;
+}
+/* img  */
+.curve{
+    margin-top: 100px;
+    width: 100%;
+}
+/* second-body  */
+.second{
+    display: flex;
+    animation: fadeIn 5s ease forwards;
+    margin-top: -10px;
+    padding: 20px 80px;
+    background-color: var(--Light-Grayis-Blue);
+}
+.second > .left {
+        width: 50%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+}
+.second > .left > p{
+    padding: 30px 0;
+}
+.second > .left > .see {
+  
+    font-weight: 500;
+    padding: 5px 0;
+    width: 170px;
+    border-bottom: 1px solid var(--Moderate-Cyan);
+}
+.second > .left > .see > span{
+    
+    color: var(--Moderate-Cyan);
+    
+}
+#invalid {
+    font-size: 14px;
+}
+.left > .box{
+    margin: 30px 0;
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+    width: 410px;
+    box-shadow: 19px 12px 26px 0px rgba(0,0,0,0.1);
+}
+.box > p {
+   padding: 10px 0;
+   line-height: 30px;
+   color: var(--Very-Dark-Blue);
+   font-weight: 500;
+}
+.box > .avatar {
+    display: flex;
+}
+.box > .avatar > img {
+    width: 40px;
+    border-radius: 50%;
+}
+.box > .avatar > .name > p{
+    color: var(--Very-Dark-Blue);
+    font-weight: 1000;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.box > .avatar > .name > span{
+    color: var(--Very-Dark-Blue);
+    font-size: 9px;
+    font-weight: 600;
+   
+}
+.box > .avatar > .name {
+    padding-left: 10px;
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+}
+.second > .right {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.second > .right > img{
+    width: 90%;
+}
+/* third body  */
+.third{
+   
+    background-color: var(--Desaturated-Blue);
+    display: flex;
+    padding: 80px;
+} 
+.third > .left {
+    width: 50%;
+}
+.third > .left > h1{
+    color: var(--Light-Grayis-Blue);
+}
+.third > .left > p{
+    color: var(--Light-Grayis-Blue);
+    font-weight: 200;
+    width: 470px;
+}
+.third > .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.third > .right > input{
+    background-color: var(--Light-Grayis-Blue);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 400px;
+}
+.third > .right > input::placeholder{
+   color: var(--Light-Gray);
+}
+.third > .right > button{
+    background-color: var(--Bright-Blue);
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    color: var(--Light-Grayis-Blue);
+    width: 200px;
+    margin-top: 10px;
+}
+.third > .right > button:hover{
+cursor: pointer;
+background-color: rgb(99, 99, 233);
+}
+/* footer  */
+footer{
+    background-color: var(--Very-Dark-Blue);
+    padding: 100px 80px;
+}
+footer > svg{
+    margin-bottom: 10px;
+}
+footer > .wrap {
+    display: flex;
+    justify-content: space-between;
+}
+footer > .wrap > .one > .list {
+    display: flex;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+.one > .list > p{
+    color: var(--Light-Grayis-Blue);
+}
+.one > p{
+    color: var(--Light-Grayis-Blue);
+    padding-bottom: 20px;
+}
+.one > p:hover{
+    color: var(--Bright-Blue);
+    cursor: pointer;
+}
+.logo > i{
+    margin-left: 5px;
+    /* width: 30px; */
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--Light-Grayis-Blue);
+    color: var(--Light-Grayis-Blue);
+}
+.logo > i:hover{
+    color: var(--Bright-Blue);
+    cursor: pointer;
+    border: 1px solid var(--Bright-Blue);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start with opacity 0 */
+        transform: translateY(-20px); /* Move element upward slightly */
+    }
+    to {
+        opacity: 1; /* Opacity 1 at the end */
+        transform: translateY(0); /* Return to its original position */
+    }
+}
+
+@media screen and (max-width: 1115px){
+    .third > .left > p{
+        width: 250px;
+    }
+}
+@media screen and (max-width: 900px){
+    .first{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .first > .left {
+        width: 100%;
+    }
+    .first > .right {
+        width: 100%;
+    }
+    .first > .right > img{
+        width: 100%;
+    }
+
+    .second{
+        flex-direction: column-reverse;
+       
+    }
+    .second > .left {
+        width: 100%;
+    } 
+    .second > .left > h1{
+        text-align: center;
+    }
+    .second > .right {
+        width: 100%;
+    }
+    .second > .right > img{
+        width: 100%;
+    }
+   
+    .left > .box{
+        width: auto;
+       margin: 40px auto ;
+    }
+
+    .third{
+        flex-direction: column;
+    }
+    .third > .left {
+        width: 100%;
+        text-align: center;
+    } 
+    .third > .right {
+        width: 100%;
+    }
+    .third > .left > p{
+        width: auto;
+    }
+    .third > .right > input{
+       width: auto;
+    }
+    .third > .right > button{
+        width: auto;
+    }
+}
+@media screen and (max-width: 775px){
+    footer > svg{
+        margin-bottom: 30px;
+    }
+    .wrap{
+        flex-direction: column;
+    }
+    .one{
+        padding-bottom: 30px;
+    }
+    .logo{
+        margin: auto;
+    }
+}
+@media screen and (max-width: 600px){
+    .header{
+        padding: 20px 40px;
+    }
+    .header > img {
+        width: 100px;
+    }
+    .header > ul{
+        gap: 20px;
+        font-size: 12px;
+    }
+    .first{
+        margin: 20px 40px;
+    }
+    .second {
+        padding: 20px 40px;
+    }
+    .third{
+        padding: 60px 40px;
+    }
+    .third > .left > h1 , .second > .left > h1 , .first > .left > h1{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    footer{    
+        padding: 60px 40px;
+    }
+}
